@@ -2,7 +2,7 @@
 
 namespace BoteSFX.Wwise
 {
-    internal interface IDidxItem
+    public interface IDidxItem
     {
         UInt32 FileId { get; }
         UInt32 OffsetFromStartOfDataSection { get; }

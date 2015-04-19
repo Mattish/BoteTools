@@ -1,6 +1,6 @@
 ﻿namespace BoteSFX.Wwise
 {
-    interface IWritable
+    public interface IWritable
     {
         byte[] ToBytes();
     }

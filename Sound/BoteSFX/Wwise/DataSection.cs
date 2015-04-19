@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace BoteSFX.Wwise
 {
-    internal interface IDataSection
+    public interface IDataSection
     {
         string SectionAsString { get; }
         IWemFile[] WemFiles { get; }

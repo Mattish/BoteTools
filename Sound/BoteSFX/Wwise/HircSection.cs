@@ -2,7 +2,7 @@
 
 namespace BoteSFX.Wwise
 {
-    internal interface IHircSection
+    public interface IHircSection
     {
         string SectionAsString { get; }
         IHircObject[] HircObjects { get; }

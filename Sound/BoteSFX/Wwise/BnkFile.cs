@@ -4,12 +4,16 @@ using System.IO;
 using System.Linq;
 
 namespace BoteSFX.Wwise
-{   
+{
     /// <summary>
     /// Public interface for the BnkFile. Provides methods to manipulate the BnkFile in a safe fashion.
     /// </summary>
     public interface IBnkFile
     {
+        IDidxSection DidxSection { get; }
+        IDataSection DataSection { get; }
+        IHircSection HircSection { get; }
+
         void WriteToFile(string filePath);
         void ReplaceWemFile(uint id, string filePath);
     }
@@ -26,6 +30,10 @@ namespace BoteSFX.Wwise
         private HircSection _hirc;
         private List<GeneralSection> _generalSections;
         private bool _hasLoadedBefore;
+
+        public IDidxSection DidxSection => _didx;
+        public IDataSection DataSection => _data;
+        public IHircSection HircSection => _hirc;
 
         private BnkFile(string filePath)
         {
@@ -77,6 +85,7 @@ namespace BoteSFX.Wwise
                     throw new Exception("Weeeep!");
             }
         }
+
 
         /// <summary>
         /// Write all sections, with changes(if any) to a file. Will throw on failure.

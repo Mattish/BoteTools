@@ -2,7 +2,7 @@
 
 namespace BoteSFX.Wwise
 {
-    internal interface IDidxSection : IWritable
+    public interface IDidxSection : IWritable
     {
         string SectionAsString { get; }
         IDidxItem[] DidxItems { get; }

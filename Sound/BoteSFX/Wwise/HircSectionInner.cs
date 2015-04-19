@@ -1,6 +1,6 @@
 ﻿namespace BoteSFX.Wwise
 {
-    internal interface IHircSectionInner
+    public interface IHircSectionInner
     {
         byte IsSoundbankOrStreamed { get; }
         uint AudioFileId { get; }

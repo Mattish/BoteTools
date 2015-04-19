@@ -2,7 +2,7 @@
 
 namespace BoteSFX.Wwise
 {
-    internal interface IHircObject
+    public interface IHircObject
     {
         byte Type { get; }
         UInt32 IdAndDataLength { get; }
