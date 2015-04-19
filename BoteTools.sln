@@ -9,6 +9,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoteSFX", "Sound\BoteSFX\Bo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoteSFX-Example", "Sound\BoteSFX-Example\BoteSFX-Example.csproj", "{F3C85D5D-001F-4B56-93F6-E6275AF5E22C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{23A1C846-103E-4D7C-9B29-384384C6F37D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoteCore", "Core\BoteCore\BoteCore.csproj", "{5F5A2A4A-61A8-42E8-9B76-B52CDC9D5855}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoteCore-Example", "BoteCore-Example\BoteCore-Example.csproj", "{8806EC02-155D-4EEC-81F8-75956C55E921}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{726CAAE9-B846-4B7A-9FF4-4D701857DE8F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +34,14 @@ Global
 		{F3C85D5D-001F-4B56-93F6-E6275AF5E22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3C85D5D-001F-4B56-93F6-E6275AF5E22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3C85D5D-001F-4B56-93F6-E6275AF5E22C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F5A2A4A-61A8-42E8-9B76-B52CDC9D5855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F5A2A4A-61A8-42E8-9B76-B52CDC9D5855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F5A2A4A-61A8-42E8-9B76-B52CDC9D5855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F5A2A4A-61A8-42E8-9B76-B52CDC9D5855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8806EC02-155D-4EEC-81F8-75956C55E921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8806EC02-155D-4EEC-81F8-75956C55E921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8806EC02-155D-4EEC-81F8-75956C55E921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8806EC02-155D-4EEC-81F8-75956C55E921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +49,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{242BEE7C-B763-4DC1-8011-3DD39B0DC1E6} = {6599F388-6A00-40CC-9DD4-E3DE3C86C36D}
 		{F3C85D5D-001F-4B56-93F6-E6275AF5E22C} = {6599F388-6A00-40CC-9DD4-E3DE3C86C36D}
+		{5F5A2A4A-61A8-42E8-9B76-B52CDC9D5855} = {23A1C846-103E-4D7C-9B29-384384C6F37D}
+		{8806EC02-155D-4EEC-81F8-75956C55E921} = {23A1C846-103E-4D7C-9B29-384384C6F37D}
 	EndGlobalSection
 EndGlobal
