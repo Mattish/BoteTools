@@ -5,13 +5,22 @@ namespace BoteSFX_Example
 {
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            IBnkFile bnkFile = BnkFile.Create(@"Content\WOWS_UI.bnk");
-            bnkFile.ReplaceWemFile(955869274, @"Content\poiLoud_12E58A64.wem");
-            bnkFile.ReplaceWemFile(676333621, @"Content\PoiIntro_12E58A64.wem");
-            bnkFile.WriteToFile("WOWS_UI_NEW3.bnk");
-            Console.ReadKey();
+            if (args.Length == 3)
+            {
+                IBnkFile bnkFile = BnkFile.Create(args[0]);
+                var numberToReplace = uint.Parse(args[1]);
+                bnkFile.ReplaceWemFile(numberToReplace, args[2]);
+                bnkFile.WriteToFile("NEW_FILE.bnk");
+                Console.ReadKey();
+                Console.WriteLine("Done.");
+            }
+            else
+            {
+                Console.WriteLine("Usage: BoteSFX-Example <Original .BNK> <File Number To Replace> <.WEM To replace with>");
+                Console.WriteLine("Example: BoteSFX-Example WOWS_UI.BNK 12345678 something.wem");
+            }
         }
     }
 }
