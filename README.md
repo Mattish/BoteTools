@@ -7,7 +7,7 @@ __I am not responsible for any wacky or bad(or good) things that happen to your 
 
 In no particular order, striked out is completed 
 
-* ~Replace SFX~
+* ~~Replace SFX~~
 * Manage information on assembly and game files
 * Prevent and maintain proper game files when new versions/file changes
 * Manage SFX modifications
