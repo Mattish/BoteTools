@@ -18,7 +18,7 @@ namespace BoteCore_Example
                 ContractResolver = ShouldSerializeContractResolver.Instance,
                 NullValueHandling = NullValueHandling.Ignore
             });
-            File.WriteAllText("ApplicationState.json", serializeObject);
+            File.WriteAllText($"ApplicationState.{assem.AssemblyVersion}.json", serializeObject);
             var obj = JsonConvert.DeserializeObject<ApplicationStateDto>(serializeObject);
             var itsBack = ApplicationStateTranslator.ToModel(obj);
             Console.WriteLine("Done");

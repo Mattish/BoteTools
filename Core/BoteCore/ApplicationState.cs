@@ -101,7 +101,7 @@ namespace BoteCore
         private void LoadAssembly()
         {
             if (File.Exists(_path + "WorldOfWarships.exe"))
-                AssemblyVersion = FileVersionInfo.GetVersionInfo(_path + "WorldOfWarships.exe").ProductVersion;
+                AssemblyVersion = FileVersionInfo.GetVersionInfo(_path + "WorldOfWarships.exe").ProductVersion.Replace(", ", ".");
             else
             {
                 throw new FileNotFoundException("Unable to find WorldOfWarships.exe");

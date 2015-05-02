@@ -48,6 +48,7 @@
     </Compile>
     <Compile Include="ApplicationDirectoryState.cs" />
     <Compile Include="External\ApplicationDirectoryStateDto.cs" />
+    <Compile Include="External\ShouldSerializeContractResolver.cs" />
     <Compile Include="External\Translators\ApplicationDirectoryStateTranslator.cs" />
     <Compile Include="External\Translators\ApplicationFileStateTranslator.cs" />
     <Compile Include="External\ApplicationStateDto.cs" />
