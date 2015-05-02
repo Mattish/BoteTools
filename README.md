@@ -3,7 +3,7 @@ Tools for modding World of Warships. These tools are no way endorsed by Wargamin
 
 __I am not responsible for any wacky or bad(or good) things that happen to your game. You accept full responsibility for using these applications. I may or may not keep this up to date with changes made to the game.__
 
-## Features
+## Features / To Do
 
 In no particular order, striked out is completed 
 
