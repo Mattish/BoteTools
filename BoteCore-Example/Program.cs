@@ -1,5 +1,6 @@
 ﻿using System;
 using BoteCore;
+using BoteCore.External.Translators;
 
 namespace BoteCore_Example
 {
@@ -7,7 +8,9 @@ namespace BoteCore_Example
     {
         static void Main(string[] args)
         {
-            var assem = BoteApplication.Create(@"C:\Games\WoWarships\");
+            var assem = ApplicationState.Create(@"C:\Games\WoWarships\");
+            var translated = ApplicationStateTranslator.ToDto(assem);
+            var retranslated = ApplicationStateTranslator.ToModel(translated);
             Console.ReadKey();
         }
     }

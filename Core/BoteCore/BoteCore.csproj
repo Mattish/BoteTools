@@ -42,7 +42,18 @@
     <Compile Include="..\..\SharedAssemblyInfo.cs">
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="BoteApplication.cs" />
+    <Compile Include="ApplicationDirectoryState.cs" />
+    <Compile Include="External\ApplicationDirectoryStateDto.cs" />
+    <Compile Include="External\Translators\ApplicationDirectoryStateTranslator.cs" />
+    <Compile Include="External\Translators\ApplicationFileStateTranslator.cs" />
+    <Compile Include="External\ApplicationStateDto.cs" />
+    <Compile Include="External\ApplicationFileStateDto.cs" />
+    <Compile Include="ApplicationFileType.cs" />
+    <Compile Include="ApplicationFileTypeExtension.cs" />
+    <Compile Include="External\Translators\ApplicationStateTranslator.cs" />
+    <Compile Include="Network\ApplicationInfoRequest.cs" />
+    <Compile Include="ApplicationState.cs" />
+    <Compile Include="ApplicationFileState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
