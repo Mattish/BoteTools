@@ -14,11 +14,17 @@ namespace BoteCore
             RelativePath = relativePath;
             ChildDirectories = new List<ApplicationDirectoryState>();
             Files = new List<ApplicationFileState>();
+            Parent = parent;
         }
 
         internal void AddDirectory(ApplicationDirectoryState state)
         {
             ChildDirectories.Add(state);
+        }
+
+        internal void RemoveDirectory(ApplicationDirectoryState state)
+        {
+            ChildDirectories.Remove(state);
         }
 
         internal void AddFile(ApplicationFileState file)

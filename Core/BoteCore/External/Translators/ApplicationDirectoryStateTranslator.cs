@@ -41,12 +41,13 @@ namespace BoteCore.External.Translators
                 var dirs = working.Item1.ChildDirectories; // get children
                 foreach (var dir in dirs) stack.Push(new Tuple<ApplicationDirectoryStateDto, ApplicationDirectoryState>(dir, parent));
 
-                foreach (var file in working.Item1.Files)
-                {
-                    var applicationFileState = ApplicationFileStateTranslator.ToModel(file);
-                    workingState.AddFile(applicationFileState);
-                    files.Add(applicationFileState);
-                }
+                if (working.Item1.Files != null)
+                    foreach (var file in working.Item1.Files)
+                    {
+                        var applicationFileState = ApplicationFileStateTranslator.ToModel(file);
+                        workingState.AddFile(applicationFileState);
+                        files.Add(applicationFileState);
+                    }
             }
             return root;
         }

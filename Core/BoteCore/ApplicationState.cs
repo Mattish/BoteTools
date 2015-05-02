@@ -76,7 +76,25 @@ namespace BoteCore
                         }
                     }
                 }
+                PruneEmptyDirectories(root, null);
                 RootDirectory = root;
+            }
+        }
+
+        public void PruneEmptyDirectories(ApplicationDirectoryState working, ApplicationDirectoryState parent)
+        {
+            var dirs = working.ChildDirectories.ToArray();
+            foreach (var applicationDirectoryState in dirs)
+            {
+                PruneEmptyDirectories(applicationDirectoryState, working);
+            }
+
+            if (working.ChildDirectories.Count == 0)
+            {
+                if (working.Files.Count == 0)
+                {
+                    parent?.RemoveDirectory(working);
+                }
             }
         }
 
